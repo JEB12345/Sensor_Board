@@ -1,4 +1,4 @@
-update=Sat 06 Jul 2013 07:02:53 PM PDT
+update=Sun 07 Jul 2013 08:10:57 PM PDT
 last_client=eeschema
 [eeschema]
 version=1
@@ -39,4 +39,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=Projects/SBB/CAD/electronics/Sensor_Board/Library/DSPIC33E128MC506
+LibName31=Projects/SBB/CAD/electronics/Sensor_Board/Library/kicadlibrary/open-project
+LibName32=Projects/SBB/CAD/electronics/Sensor_Board/Library/sn65hvd232
+LibName33=Projects/SBB/CAD/electronics/Sensor_Board/Library/AD7192
