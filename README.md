@@ -1,7 +1,7 @@
 Sensor_Board
 ============
 
-Sensor Board for our SUPER Ball Bot Tensegrity Project
+Sensor Board for our SUPER Ball Bot Tensegrity Project. Uses KiCAD.
 
 <<<<<<< HEAD
 =======
