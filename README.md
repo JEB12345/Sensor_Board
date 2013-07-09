@@ -3,7 +3,7 @@ Sensor_Board
 
 Sensor Board for our SUPER Ball Bot Tensegrity Project
 
-Hello! Good-Bye!!
+Hello! Good-Bye!! Trying this again...
 
 #TODO Make a write up of how the files are organized and what is needed to build this board
 
