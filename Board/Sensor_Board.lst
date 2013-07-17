@@ -1,0 +1,171 @@
+eeschema (2012-01-19 BZR 3256)-stable  >> Creation date: Wed 17 Jul 2013 09:56:30 AM PDT
+
+#Cmp ( order = Reference )
+| C1         10uF        ;             
+| C2         0.1uF       ;             
+| C3         10uF        ;             
+| C4         0.1uF       ;             
+| C5         0.1uF       ;             
+| C6         0.1uF       ;             
+| C7         0.1uF       ;             
+| C8         0.1uF       ;             
+| C9         1mF         ;             
+| C10        10uF        ;             
+| C11        0.1uF       ;             
+| C12        0.1uF       ;             
+| C13        0.1uF       ;             
+| C14        0.1uF       ;             
+| C15        1uF         ;             
+| C16        100nF       ;             
+| C17        100nF       ;             
+| C18        100n.F      ;             
+| C19        100nF       ;             
+| C20        1uF         ;             
+| C21        0.1uF       ;             
+| C22        2.2nF       ;             
+| C23        1uF         ;             
+| C24        0.1uF       ;             
+| C25        1uF         ;             
+| C26        0.1uF       ;             
+| C27        10uF        ;             
+| D1         LED         ;             
+| D2         LED         ;             
+| D3         LED         ;             
+| D4         LED         ;             
+| D5         LED         ;             
+| D6         LED         ;             
+| JP1        JUMPER      ;             
+| P1         CONN_6      ;             
+| P2         CONN_2      ;             
+| P3         CONN_2      ;             
+| P4         CONN_7X2    ;             
+| P5         CONN_3      ;             
+| P6         CONN_9X2    ;             
+| P7         CONN_9X2    ;             
+| P8         CONN_2      ;             
+| P9         CONN_10     ;             
+| P10        CONN_10     ;             
+| P11        CONN_2      ;             
+| P12        CONN_2      ;             
+| R1         10k         ; 0805        
+| R2         10k         ; 0805        
+| R3         154k        ; 0805        
+| R4         470         ; 0805        
+| R5         330         ; 0805        
+| R6         36.5k       ; 0805        
+| R7         8.06k       ; 0805        
+| R8         50          ; 0805        
+| R9         110         ; 0805        
+| R10        110         ; 0805        
+| R11        330         ; 0805        
+| R12        180         ; 0805        
+| R13        120         ; 0805        
+| R14        4.7k        ; 0805        
+| R15        4.7k        ; 0805        
+| R16        150         ; 0805        
+| R17        30          ; 0805        
+| R18        30          ; 0805        
+| R19        4.7k        ; 0805        
+| R20        4.7k        ; 0805        
+| R21        110         ; 0805        
+| R22        30          ; 0805        
+| R23        4.7k        ; 0805        
+| R24        4.7k        ; 0805        
+| SW1        SW_PUSH     ;             
+| U1         AP7363      ; MODULE      
+| U2         TPS2113A    ; MODULE      
+| U4         RGB_LED     ; MODULE      
+| U5         SN65HVD232  ;             
+| U6         DSPIC33ExxxMC50x-64TQFP; MODULE      
+| U10        AD7193      ; MODULE      
+| U13        AS1359-3    ; MODULE      
+| U20        MAG3110     ; MODULE      
+| U22        MPU-6000/MPU-6050; MODULE      
+| U23        SI1970DH    ; MODULE      
+#End Cmp
+
+#Cmp ( order = Value )
+| 0.1uF        C2        ;             
+| 0.1uF        C4        ;             
+| 0.1uF        C5        ;             
+| 0.1uF        C6        ;             
+| 0.1uF        C7        ;             
+| 0.1uF        C8        ;             
+| 0.1uF        C11       ;             
+| 0.1uF        C12       ;             
+| 0.1uF        C13       ;             
+| 0.1uF        C14       ;             
+| 0.1uF        C21       ;             
+| 0.1uF        C24       ;             
+| 0.1uF        C26       ;             
+| 100n.F       C18       ;             
+| 100nF        C16       ;             
+| 100nF        C17       ;             
+| 100nF        C19       ;             
+| 10k          R1        ; 0805        
+| 10k          R2        ; 0805        
+| 10uF         C1        ;             
+| 10uF         C3        ;             
+| 10uF         C10       ;             
+| 10uF         C27       ;             
+| 110          R9        ; 0805        
+| 110          R10       ; 0805        
+| 110          R21       ; 0805        
+| 120          R13       ; 0805        
+| 150          R16       ; 0805        
+| 154k         R3        ; 0805        
+| 180          R12       ; 0805        
+| 1mF          C9        ;             
+| 1uF          C15       ;             
+| 1uF          C20       ;             
+| 1uF          C23       ;             
+| 1uF          C25       ;             
+| 2.2nF        C22       ;             
+| 30           R17       ; 0805        
+| 30           R18       ; 0805        
+| 30           R22       ; 0805        
+| 330          R5        ; 0805        
+| 330          R11       ; 0805        
+| 36.5k        R6        ; 0805        
+| 4.7k         R14       ; 0805        
+| 4.7k         R15       ; 0805        
+| 4.7k         R19       ; 0805        
+| 4.7k         R20       ; 0805        
+| 4.7k         R23       ; 0805        
+| 4.7k         R24       ; 0805        
+| 470          R4        ; 0805        
+| 50           R8        ; 0805        
+| 8.06k        R7        ; 0805        
+| AD7193       U10       ; MODULE      
+| AP7363       U1        ; MODULE      
+| AS1359-3     U13       ; MODULE      
+| CONN_10      P9        ;             
+| CONN_10      P10       ;             
+| CONN_2       P2        ;             
+| CONN_2       P3        ;             
+| CONN_2       P8        ;             
+| CONN_2       P11       ;             
+| CONN_2       P12       ;             
+| CONN_3       P5        ;             
+| CONN_6       P1        ;             
+| CONN_7X2     P4        ;             
+| CONN_9X2     P6        ;             
+| CONN_9X2     P7        ;             
+| DSPIC33ExxxMC50x-64TQFP U6        ; MODULE      
+| JUMPER       JP1       ;             
+| LED          D1        ;             
+| LED          D2        ;             
+| LED          D3        ;             
+| LED          D4        ;             
+| LED          D5        ;             
+| LED          D6        ;             
+| MAG3110      U20       ; MODULE      
+| MPU-6000/MPU-6050 U22       ; MODULE      
+| RGB_LED      U4        ; MODULE      
+| SI1970DH     U23       ; MODULE      
+| SN65HVD232   U5        ;             
+| SW_PUSH      SW1       ;             
+| TPS2113A     U2        ; MODULE      
+#End Cmp
+
+#End List
