@@ -773,7 +773,7 @@ F 2 "0805" H 6500 4250 60  0001 C CNN
 F 3 "" H 6500 4250 60  0001 C CNN
 F 4 "0.059" H 6500 4250 60  0001 C CNN "Price"
 F 5 "Digikey" H 6500 4250 60  0001 C CNN "Retailer"
-F 6 "311-1358-1-ND" H 6500 4250 60  0001 C CNN "Part_number"
+F 6 "311-1358-1-ND" H 6500 4250 60  0001 C CNN "Part_Number"
 	1    6500 4250
 	1    0    0    -1  
 $EndComp
