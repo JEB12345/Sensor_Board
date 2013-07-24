@@ -851,9 +851,9 @@ $EndComp
 Text Label 6550 2800 0    60   ~ 0
 BPDSW
 NoConn ~ 4600 2100
-Text Label 4400 3200 0    60   ~ 0
+Text Label 3850 3200 2    60   ~ 0
 AIN2
-Text Label 4400 3100 0    60   ~ 0
+Text Label 3850 3100 2    60   ~ 0
 AIN1
 Text Label 4400 2900 0    60   ~ 0
 AGND
@@ -873,17 +873,17 @@ F 6 "AD7193BRUZ-ND" H 5550 2750 60  0001 C CNN "Part_Number"
 	1    5550 2750
 	1    0    0    -1  
 $EndComp
-Text Label 4400 3300 0    60   ~ 0
+Text Label 3850 3300 2    60   ~ 0
 AIN3
-Text Label 4400 3400 0    60   ~ 0
+Text Label 3850 3400 2    60   ~ 0
 AIN4
-Text Label 6550 3400 0    60   ~ 0
+Text Label 7250 3400 0    60   ~ 0
 AIN5
-Text Label 6550 3300 0    60   ~ 0
+Text Label 7250 3300 0    60   ~ 0
 AIN6
-Text Label 6550 3200 0    60   ~ 0
+Text Label 7250 3200 0    60   ~ 0
 AIN7
-Text Label 6550 3100 0    60   ~ 0
+Text Label 7250 3100 0    60   ~ 0
 AIN8
 Text Label 4350 2700 0    60   ~ 0
 REFIN2+

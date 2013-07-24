@@ -530,4 +530,7 @@ Text HLabel 3250 2650 0    60   Input ~ 0
 V24
 Wire Wire Line
 	4800 3050 5800 3050
+NoConn ~ 5300 1650
+NoConn ~ 5300 1750
+NoConn ~ 4000 1750
 $EndSCHEMATC
