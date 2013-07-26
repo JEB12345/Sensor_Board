@@ -528,24 +528,10 @@ Text Label 2000 6750 0    60   ~ 0
 RB7
 Text Label 1150 6750 2    60   ~ 0
 XBEE_MOSI
-Text Label 1950 7700 0    60   ~ 0
+Text Label 1950 7600 0    60   ~ 0
 PWR_SW2
 Text Label 1950 7500 0    60   ~ 0
 PWR_SW1
-$Comp
-L CONN_2 P8
-U 1 1 51E5DDF1
-P 1550 7600
-F 0 "P8" V 1500 7600 40  0000 C CNN
-F 1 "CONN_2" V 1600 7600 40  0000 C CNN
-F 2 "PIN_ARRAY_2X1" H 1550 7600 60  0001 C CNN
-F 3 "" H 1550 7600 60  0001 C CNN
-F 4 "0.34" V 1550 7600 60  0001 C CNN "Price"
-F 5 "Digikey" V 1550 7600 60  0001 C CNN "Retailer"
-F 6 "S7000-ND" V 1550 7600 60  0001 C CNN "Part_Number"
-	1    1550 7600
-	-1   0    0    -1  
-$EndComp
 Text Label 2000 6650 0    60   ~ 0
 RB4
 Text Label 950  6650 0    60   ~ 0
@@ -2363,7 +2349,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 6150 5400 5450
 Wire Wire Line
-	1900 7700 2250 7700
+	1900 7600 2250 7600
 Wire Notes Line
 	2600 7100 4350 7100
 Wire Notes Line
@@ -2418,6 +2404,8 @@ F2 "Vmotor" I L 1850 3100 60
 F3 "Vbatt" I L 1850 3400 60 
 F4 "Vin" I R 2800 3250 60 
 F5 "V24" I L 1850 3250 60 
+F6 "NFET_3" I R 2800 3100 60 
+F7 "SW_PWR3" I R 2800 3400 60 
 $EndSheet
 Wire Wire Line
 	1650 3400 1650 3700
@@ -2555,4 +2543,30 @@ Wire Wire Line
 	900  3250 1850 3250
 Text Label 950  3250 0    60   ~ 0
 V24
+$Comp
+L CONN_3 P?
+U 1 1 51F2D431
+P 1550 7600
+F 0 "P?" V 1500 7600 50  0000 C CNN
+F 1 "CONN_3" V 1600 7600 40  0000 C CNN
+F 2 "PIN_ARRAY_3X1" H 1550 7600 60  0001 C CNN
+F 3 "" H 1550 7600 60  0001 C CNN
+F 4 "0.441" V 1550 7600 60  0001 C CNN "Price"
+F 5 "Digikey" V 1550 7600 60  0001 C CNN "Retailer"
+F 6 "S7001-ND" V 1550 7600 60  0001 C CNN "Part_Number"
+	1    1550 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 7700 2250 7700
+Wire Wire Line
+	2800 3100 3200 3100
+Wire Wire Line
+	2800 3400 3200 3400
+Text Label 2950 3100 0    60   ~ 0
+RA10
+Text Label 2950 3400 0    60   ~ 0
+PWR_SW3
+Text Label 1950 7700 0    60   ~ 0
+PWR_SW3
 $EndSCHEMATC
