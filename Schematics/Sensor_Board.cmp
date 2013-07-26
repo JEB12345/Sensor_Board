@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by PcbNew date = Wed 24 Jul 2013 04:32:03 PM PDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 25 Jul 2013 02:51:45 PM PDT
 
 BeginCmp
 TimeStamp = /51EB09BD/51EB0F02;
@@ -655,7 +655,7 @@ BeginCmp
 TimeStamp = /51DA2902;
 Reference = U5;
 ValeurCmp = SN65HVD232;
-IdModule  = 8-SOIC;
+IdModule  = SOIC-8_N;
 EndCmp
 
 BeginCmp
