@@ -44,6 +44,7 @@ LIBS:MAG3110
 LIBS:RESISTOR_ARRAY
 LIBS:con-commcon
 LIBS:pinhead
+LIBS:sw_push_4
 LIBS:Sensor_Board-cache
 EELAYER 24 0
 EELAYER END
