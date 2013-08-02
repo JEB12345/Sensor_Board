@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 25 Jul 2013 02:51:45 PM PDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 01 Aug 2013 05:26:38 PM PDT
 
 BeginCmp
 TimeStamp = /51EB09BD/51EB0F02;
@@ -372,9 +372,9 @@ IdModule  = pinhead-2X09;
 EndCmp
 
 BeginCmp
-TimeStamp = /51E5DDF1;
+TimeStamp = /51F2D431;
 Reference = P8;
-ValeurCmp = CONN_2;
+ValeurCmp = CONN_3;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
@@ -411,6 +411,13 @@ TimeStamp = /51ED8A4D;
 Reference = P13;
 ValeurCmp = CONN_1;
 IdModule  = pinhead-1X01;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E81344/51FB0AF2;
+Reference = P14;
+ValeurCmp = CONN_4X2;
+IdModule  = pinhead-2X04;
 EndCmp
 
 BeginCmp
@@ -617,9 +624,9 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51D90B88;
+TimeStamp = /51FB057B;
 Reference = SW1;
-ValeurCmp = SW_PUSH;
+ValeurCmp = SW_PUSH_4;
 IdModule  = ASL-B3F-1020;
 EndCmp
 
