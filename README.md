@@ -5,8 +5,6 @@ Sensor Board for our SUPER Ball Bot Tensegrity Project. The project is built in 
 
 This project was built using KiCAD version (2013-mar-2013)-testing. There maybe compatablility issues associated with older versions of KiCAD.
 
-#TODO Make a write up of how the files are organized and what is needed to build this board
-
 The files are organized as follows:
 /Schematics: This is where all the schematic files for the Sensor Board are located including the net file.
 /Board: All the files associated with the physical board are located here. The layout and Gerber files.
