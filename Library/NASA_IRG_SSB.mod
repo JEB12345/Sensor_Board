@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  Wed 31 Jul 2013 12:02:18 AM PDT
+PCBNEW-LibModule-V1  Tue 06 Aug 2013 06:39:12 PM PDT
 # encoding utf-8
 Units mm
 $INDEX
@@ -15,6 +15,7 @@ VFDN-10
 pinhead-2X07
 pinhead-2X09
 sot323-6
+xbee_2mm_pinheader_1x10
 $EndINDEX
 $MODULE 8-TSSOP
 Po 0 0 0 15 51ED6EF2 00000000 ~~
@@ -1648,4 +1649,87 @@ Of 0 0 0
 Ro 0 0 0
 $EndSHAPE3D
 $EndMODULE sot323-6
+$MODULE xbee_2mm_pinheader_1x10
+Po 0 0 0 15 5201A53A 00000000 ~~
+Li xbee_2mm_pinheader_1x10
+Sc 0
+AR 
+Op 0 0 0
+T0 -0.016 2.54 1 1 0 0.15 N V 21 N "xbee_2mm_pinheader_1x10"
+T1 0 -6.35 1 1 0 0.15 N I 21 N "VAL**"
+DS -10 1.2 -10 -1.2 0.15 21
+DS -10 1.2 10 1.2 0.15 21
+DS 10 1.2 10 -1.2 0.15 21
+DS 10 -1.2 -10 -1.2 0.15 21
+$PAD
+Sh "1" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -9 0
+$EndPAD
+$PAD
+Sh "2" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -7 0
+$EndPAD
+$PAD
+Sh "3" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -5 0
+$EndPAD
+$PAD
+Sh "4" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -3 0
+$EndPAD
+$PAD
+Sh "5" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po -1 0
+$EndPAD
+$PAD
+Sh "6" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 1 0
+$EndPAD
+$PAD
+Sh "7" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 3 0
+$EndPAD
+$PAD
+Sh "8" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 5 0
+$EndPAD
+$PAD
+Sh "9" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 7 0
+$EndPAD
+$PAD
+Sh "10" C 1.224 1.224 0 0 0
+Dr 0.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 9 0
+$EndPAD
+$EndMODULE xbee_2mm_pinheader_1x10
 $EndLIBRARY
