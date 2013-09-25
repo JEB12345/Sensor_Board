@@ -1,7 +1,8 @@
-PCBNEW-LibModule-V1  Tue 06 Aug 2013 06:39:12 PM PDT
+PCBNEW-LibModule-V1  Wed 25 Sep 2013 08:16:04 AM PDT
 # encoding utf-8
 Units mm
 $INDEX
+1pin_3mm
 8-TSSOP
 ASL-1X06-SIP_LOCK
 Cree-RGB-LED
@@ -17,6 +18,25 @@ pinhead-2X09
 sot323-6
 xbee_2mm_pinheader_1x10
 $EndINDEX
+$MODULE 1pin_3mm
+Po 0 0 0 15 5242FE0A 00000000 ~~
+Li 1pin_3mm
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+Sc 0
+AR 1pin
+Op 0 0 0
+T0 0 -3.048 1.016 1.016 0 0.254 N V 21 N ""
+T1 0 2.794 1.016 1.016 0 0.254 N I 21 N "P***"
+DC 0 0 0 -3.5 0.381 21
+$PAD
+Sh "1" C 6.5 6.5 0 0 0
+Dr 3.5 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$EndMODULE 1pin_3mm
 $MODULE 8-TSSOP
 Po 0 0 0 15 51ED6EF2 00000000 ~~
 Li 8-TSSOP

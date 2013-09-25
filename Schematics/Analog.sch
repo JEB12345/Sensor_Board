@@ -1071,4 +1071,6 @@ Connection ~ 6100 5950
 Wire Wire Line
 	6000 5850 6100 5850
 Connection ~ 6100 5850
+Text Notes 8500 900  0    60   ~ 0
+Put and LED on one of the GP pins for testing\n
 $EndSCHEMATC
