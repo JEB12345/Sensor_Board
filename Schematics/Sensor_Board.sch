@@ -2605,5 +2605,9 @@ Connection ~ 6050 6400
 Wire Wire Line
 	7900 4400 7900 4500
 Text Notes 3200 6050 0    60   ~ 0
-Add A 1uF cap between pin 1 and GND\nMaybe...
+Add A 6.8pF and a 1uF cap between pin 1 and GND\nMaybe...
+Text Notes 8250 2500 0    60   ~ 0
+Add a speaker..... -.-\n
+Text Notes 3250 5650 0    60   ~ 0
+Add a 1k resistor to XBEE VCC\n\nAdd UART support
 $EndSCHEMATC
