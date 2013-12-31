@@ -29,31 +29,33 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:TPS2113A
-LIBS:sn65hvd232
-LIBS:Si1970DH
-LIBS:RGB_LED
-LIBS:RESISTOR_ARRAY
-LIBS:pinhead
-LIBS:MPU-9150
-LIBS:MPU-6000_MPU-6050
-LIBS:microchip_can
-LIBS:MAG3110
-LIBS:DSPIC33E128MC506
-LIBS:dp_devices
-LIBS:AS1359
-LIBS:AP7363
-LIBS:AD7193
 LIBS:AD7192
+LIBS:AD7193
+LIBS:AP7363
+LIBS:AS1359
+LIBS:dp_devices
+LIBS:DSPIC33E128MC506
+LIBS:MAG3110
+LIBS:microchip_can
+LIBS:MPU-6000_MPU-6050
+LIBS:MPU-9150
+LIBS:pinhead
+LIBS:RESISTOR_ARRAY
+LIBS:RGB_LED
+LIBS:Si1970DH
+LIBS:sn65hvd232
 LIBS:sw_push_4
+LIBS:TPS2113A
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
 LIBS:Sensor_Board-cache
-EELAYER 24 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 3
 Title ""
-Date "19 jul 2013"
+Date "31 dec 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -510,16 +512,10 @@ Text Notes 1100 5150 0    60   ~ 0
 Pin Out Connectors
 Text Notes 2800 7250 0    60   ~ 0
 uC Controlled Power Switches
-Text Label 2000 7150 0    60   ~ 0
-RA10
-Text Label 950  7150 0    60   ~ 0
-RB13
-Text Label 2000 7050 0    60   ~ 0
-RB12
 Text Label 950  7050 0    60   ~ 0
-RB11
+RB13
 Text Label 2000 6950 0    60   ~ 0
-RB10
+RB12
 Text Label 1150 6950 2    60   ~ 0
 XBEE_CLK
 Text Label 1150 6850 2    60   ~ 0
@@ -528,9 +524,9 @@ Text Label 2000 6750 0    60   ~ 0
 RC10
 Text Label 1150 6750 2    60   ~ 0
 XBEE_MOSI
-Text Label 1950 7600 0    60   ~ 0
+Text Label 1100 7150 2    60   ~ 0
 PWR_SW2
-Text Label 1950 7500 0    60   ~ 0
+Text Label 2000 7150 0    60   ~ 0
 PWR_SW1
 Text Label 2000 6650 0    60   ~ 0
 RB4
@@ -584,31 +580,6 @@ F 3 "" H 6600 6550 60  0001 C CNN
 	1    6600 6550
 	1    0    0    -1  
 $EndComp
-$Comp
-L +3.3V #PWR03
-U 1 1 51E5C983
-P 4500 6350
-F 0 "#PWR03" H 4500 6310 30  0001 C CNN
-F 1 "+3.3V" H 4500 6460 30  0000 C CNN
-F 2 "" H 4500 6350 60  0001 C CNN
-F 3 "" H 4500 6350 60  0001 C CNN
-	1    4500 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R23
-U 1 1 51E5C972
-P 4500 6650
-F 0 "R23" V 4580 6650 40  0000 C CNN
-F 1 "4.7k" V 4507 6651 40  0000 C CNN
-F 2 "SM0805" H 4500 6650 60  0001 C CNN
-F 3 "" H 4500 6650 60  0001 C CNN
-F 4 "0.021" V 4500 6650 60  0001 C CNN "Price"
-F 5 "Digikey" V 4500 6650 60  0001 C CNN "Retailer"
-F 6 "RMCF0805JT4K70CT-ND" V 4500 6650 60  0001 C CNN "Part_Number"
-	1    4500 6650
-	-1   0    0    1   
-$EndComp
 NoConn ~ 10900 5700
 Text Label 4900 7550 2    60   ~ 0
 SLEEP_RQ
@@ -624,11 +595,11 @@ Text Label 5950 6950 0    60   ~ 0
 XBEE_CLK
 Text Label 5950 7050 0    60   ~ 0
 XBEE_nSSEL
-Text Label 5950 7650 0    60   ~ 0
+Text Label 6500 7650 0    60   ~ 0
 XBEE_MOSI
-Text Label 4900 7150 2    60   ~ 0
+Text Label 4750 7150 0    60   ~ 0
 nRESET
-Text Label 4950 7050 2    60   ~ 0
+Text Label 4350 7050 2    60   ~ 0
 XBEE_MISO
 NoConn ~ 4950 7450
 NoConn ~ 5900 7350
@@ -641,17 +612,6 @@ F 1 "GND" H 4750 7630 30  0001 C CNN
 F 2 "" H 4750 7700 60  0001 C CNN
 F 3 "" H 4750 7700 60  0001 C CNN
 	1    4750 7700
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR05
-U 1 1 51E49C90
-P 4750 6750
-F 0 "#PWR05" H 4750 6710 30  0001 C CNN
-F 1 "+3.3V" H 4750 6860 30  0000 C CNN
-F 2 "" H 4750 6750 60  0001 C CNN
-F 3 "" H 4750 6750 60  0001 C CNN
-	1    4750 6750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1007,18 +967,12 @@ F 3 "" H 10150 6850 60  0001 C CNN
 	1    10150 6850
 	1    0    0    -1  
 $EndComp
-Text Label 1150 2600 0    60   ~ 0
-3V3
 Text Label 5000 2900 1    60   ~ 0
-RA10
+XBEE_NFET
 Text Label 5100 2900 1    60   ~ 0
 RB13
 Text Label 5200 2900 1    60   ~ 0
 RB12
-Text Label 5300 2900 1    60   ~ 0
-RB11
-Text Label 5400 2900 1    60   ~ 0
-RB10
 Text Label 5500 2900 1    60   ~ 0
 SLEEP_RQ
 Text Label 5600 2900 1    60   ~ 0
@@ -1053,19 +1007,8 @@ Text Label 5700 5450 3    60   ~ 0
 AN11
 Text Label 5600 5500 3    60   ~ 0
 AN8
-Text Label 1150 3700 0    60   ~ 0
+Text Label 1350 3250 0    60   ~ 0
 VBAT
-$Comp
-L GND #PWR029
-U 1 1 51DD73E9
-P 1300 4000
-F 0 "#PWR029" H 1300 4000 30  0001 C CNN
-F 1 "GND" H 1300 3930 30  0001 C CNN
-F 2 "" H 1300 4000 60  0001 C CNN
-F 3 "" H 1300 4000 60  0001 C CNN
-	1    1300 4000
-	1    0    0    -1  
-$EndComp
 Text Label 5500 5500 3    60   ~ 0
 AN7
 Text Label 5400 5500 3    60   ~ 0
@@ -1167,19 +1110,6 @@ F 6 "475-2560-1-ND" H 3100 1350 60  0001 C CNN "Part_Number"
 	1    3100 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR031
-U 1 1 51DC5C1B
-P 1250 2900
-F 0 "#PWR031" H 1250 2900 30  0001 C CNN
-F 1 "GND" H 1250 2830 30  0001 C CNN
-F 2 "" H 1250 2900 60  0001 C CNN
-F 3 "" H 1250 2900 60  0001 C CNN
-	1    1250 2900
-	1    0    0    -1  
-$EndComp
-Text Label 1150 2800 0    60   ~ 0
-GND
 Text Notes 2650 1450 0    60   ~ 0
 YELLOW
 Text Notes 2800 1750 0    60   ~ 0
@@ -1392,9 +1322,9 @@ F 3 "" H 8350 4150 60  0001 C CNN
 	1    8350 4150
 	1    0    0    -1  
 $EndComp
-Text Label 4750 1000 0    60   ~ 0
+Text Label 4200 1000 0    60   ~ 0
 CAN_TX
-Text Label 4750 1300 0    60   ~ 0
+Text Label 4200 1300 0    60   ~ 0
 CAN_RX
 $Comp
 L GND #PWR045
@@ -1676,31 +1606,6 @@ F 6 "DSPIC33EP128GP506-I/PT-ND" H 5750 4200 60  0001 C CNN "Part_Number"
 	1    5750 4200
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 1850 3050 950  400 
-U 51EB09BD
-F0 "Vin_and_BackUp" 50
-F1 "Vin_and_BackUp.sch" 50
-F2 "Vmotor" I L 1850 3100 60 
-F3 "Vbatt" I L 1850 3400 60 
-F4 "Vin" I R 2800 3250 60 
-F5 "V24" I L 1850 3250 60 
-F6 "NFET_3" I R 2800 3100 60 
-F7 "SW_PWR3" I R 2800 3400 60 
-$EndSheet
-Text Label 2950 3250 0    60   ~ 0
-Vin
-$Comp
-L +3.3V #PWR059
-U 1 1 51EB3510
-P 3200 3250
-F 0 "#PWR059" H 3200 3210 30  0001 C CNN
-F 1 "+3.3V" H 3200 3360 30  0000 C CNN
-F 2 "" H 3200 3250 60  0001 C CNN
-F 3 "" H 3200 3250 60  0001 C CNN
-	1    3200 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L CONN_9X2 P6
 U 1 1 51E47ADE
@@ -1771,67 +1676,10 @@ F 6 "S7000-ND" V 11000 4550 60  0001 C CNN "Part_Number"
 	1    11000 4550
 	0    1    -1   0   
 $EndComp
-$Comp
-L CONN_2 P2
-U 1 1 51EC6CB2
-P 750 2700
-F 0 "P2" V 700 2700 40  0000 C CNN
-F 1 "CONN_2" V 800 2700 40  0000 C CNN
-F 2 "PIN_ARRAY_2X1" H 750 2700 60  0001 C CNN
-F 3 "" H 750 2700 60  0001 C CNN
-F 4 "0.641" V 750 2700 60  0001 C CNN "Price"
-F 5 "Digikey" V 750 2700 60  0001 C CNN "Retailer"
-F 6 "609-3505-ND" V 750 2700 60  0001 C CNN "Part_Number"
-	1    750  2700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_2 P3
-U 1 1 51EC6FE3
-P 750 3800
-F 0 "P3" V 700 3800 40  0000 C CNN
-F 1 "CONN_2" V 800 3800 40  0000 C CNN
-F 2 "PIN_ARRAY_2X1" H 750 3800 60  0001 C CNN
-F 3 "" H 750 3800 60  0001 C CNN
-F 4 "---" V 750 3800 60  0001 C CNN "Price"
-F 5 "Digikey" V 750 3800 60  0001 C CNN "Retailer"
-F 6 "---" V 750 3800 60  0001 C CNN "Part_Number"
-	1    750  3800
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_1 P13
-U 1 1 51ED8A4D
-P 750 3250
-F 0 "P13" H 830 3250 40  0000 L CNN
-F 1 "CONN_1" H 750 3305 30  0001 C CNN
-F 2 "pinhead-1X01" H 750 3250 60  0000 C CNN
-F 3 "" H 750 3250 60  0000 C CNN
-	1    750  3250
-	-1   0    0    -1  
-$EndComp
-Text Label 950  3250 0    60   ~ 0
-V24
-$Comp
-L CONN_3 P8
-U 1 1 51F2D431
-P 1550 7600
-F 0 "P8" V 1500 7600 50  0000 C CNN
-F 1 "CONN_3" V 1600 7600 40  0000 C CNN
-F 2 "PIN_ARRAY_3X1" H 1550 7600 60  0001 C CNN
-F 3 "" H 1550 7600 60  0001 C CNN
-F 4 "0.441" V 1550 7600 60  0001 C CNN "Price"
-F 5 "Digikey" V 1550 7600 60  0001 C CNN "Retailer"
-F 6 "S7001-ND" V 1550 7600 60  0001 C CNN "Part_Number"
-	1    1550 7600
-	-1   0    0    -1  
-$EndComp
 Text Label 2950 3100 0    60   ~ 0
-RA10
+XBEE_NFET
 Text Label 2950 3400 0    60   ~ 0
-PWR_SW3
-Text Label 1950 7700 0    60   ~ 0
-PWR_SW3
+XBEE_PWR
 Text Label 7500 6250 2    60   ~ 0
 V_MAG
 Text Label 8650 6350 0    60   ~ 0
@@ -1887,21 +1735,6 @@ F 3 "" H 5600 1150 60  0000 C CNN
 	1    5600 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L GND #PWR061
-U 1 1 52431566
-P 4750 6900
-F 0 "#PWR061" H 4750 6900 30  0001 C CNN
-F 1 "GND" H 4750 6830 30  0001 C CNN
-F 2 "" H 4750 6900 60  0001 C CNN
-F 3 "" H 4750 6900 60  0001 C CNN
-	1    4750 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 6850 4750 6900
-Wire Wire Line
-	4950 6850 4750 6850
 Wire Wire Line
 	5050 6250 5050 6400
 Wire Wire Line
@@ -1923,22 +1756,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 3100 3200 3100
 Wire Wire Line
-	1900 7700 2250 7700
-Wire Wire Line
-	900  3250 1850 3250
-Wire Wire Line
-	1650 3100 1850 3100
-Wire Wire Line
-	1650 2600 1650 3100
-Wire Wire Line
-	2800 3250 3200 3250
-Wire Wire Line
-	1650 3400 1850 3400
-Wire Wire Line
-	1650 3400 1650 3700
-Wire Wire Line
-	1100 2600 1650 2600
-Wire Wire Line
 	2750 7450 2750 7500
 Wire Wire Line
 	7900 4200 7900 4100
@@ -1947,17 +1764,15 @@ Wire Wire Line
 Wire Wire Line
 	4900 6400 5150 6400
 Wire Wire Line
-	10050 4050 9750 4050
+	9500 4050 10050 4050
 Wire Wire Line
-	10050 3850 9750 3850
+	9500 3850 10050 3850
 Wire Wire Line
 	10050 3650 9750 3650
 Wire Notes Line
 	8100 500  8100 1250
 Wire Notes Line
 	2600 7100 4350 7100
-Wire Wire Line
-	1900 7600 2250 7600
 Wire Wire Line
 	5400 6150 5400 5450
 Wire Wire Line
@@ -1977,10 +1792,6 @@ Wire Wire Line
 	10900 4900 10900 5050
 Wire Wire Line
 	6600 6600 6600 6550
-Wire Wire Line
-	4950 6950 4500 6950
-Wire Wire Line
-	4500 6350 4500 6400
 Wire Notes Line
 	3750 3650 3050 3650
 Wire Notes Line
@@ -1999,8 +1810,6 @@ Wire Wire Line
 	5900 6850 6150 6850
 Wire Wire Line
 	5900 7050 6150 7050
-Wire Wire Line
-	4950 7050 4750 7050
 Wire Wire Line
 	4750 7700 4750 7650
 Wire Wire Line
@@ -2033,7 +1842,7 @@ Wire Wire Line
 	8600 7150 9450 7150
 Connection ~ 9150 6350
 Wire Wire Line
-	9150 6450 9150 6350
+	9150 6350 9150 6450
 Connection ~ 6950 6500
 Wire Wire Line
 	6850 6500 7250 6500
@@ -2159,7 +1968,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 1800 6750 1800
 Wire Wire Line
-	1650 3700 1100 3700
+	1850 3250 1150 3250
 Wire Wire Line
 	5100 2950 5100 2650
 Wire Wire Line
@@ -2201,8 +2010,6 @@ Wire Wire Line
 	2900 1650 2600 1650
 Wire Wire Line
 	7300 4050 7650 4050
-Wire Wire Line
-	1250 2900 1250 2800
 Wire Wire Line
 	4000 750  4000 1750
 Wire Wire Line
@@ -2279,10 +2086,6 @@ Wire Wire Line
 	8350 4100 8350 4150
 Connection ~ 7900 4100
 Wire Wire Line
-	4700 1000 5000 1000
-Wire Wire Line
-	5000 1300 4700 1300
-Wire Wire Line
 	5000 1100 4400 1100
 Wire Wire Line
 	4400 1100 4400 1150
@@ -2332,8 +2135,6 @@ Wire Wire Line
 	3300 1050 3350 1050
 Connection ~ 4000 1050
 Wire Wire Line
-	1250 2800 1100 2800
-Wire Wire Line
 	7300 3550 7650 3550
 Wire Wire Line
 	2900 1350 2600 1350
@@ -2376,10 +2177,6 @@ Wire Wire Line
 	5200 2950 5200 2650
 Wire Wire Line
 	5000 2950 5000 2650
-Wire Wire Line
-	1100 3900 1300 3900
-Wire Wire Line
-	1300 3900 1300 4000
 Wire Wire Line
 	6300 600  6750 600 
 Wire Wire Line
@@ -2448,11 +2245,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 5350 2250 5350
 Wire Wire Line
-	4750 6750 4950 6750
-Wire Wire Line
 	4950 7150 4750 7150
-Wire Wire Line
-	5900 7650 6150 7650
 Wire Wire Line
 	5900 6950 6150 6950
 Wire Wire Line
@@ -2474,8 +2267,6 @@ Wire Notes Line
 Wire Notes Line
 	4700 3200 3750 3200
 Wire Wire Line
-	4500 6950 4500 6900
-Wire Wire Line
 	5900 7150 6600 7150
 Wire Wire Line
 	6600 7150 6600 7100
@@ -2487,10 +2278,6 @@ Wire Notes Line
 	6400 6600 4650 6600
 Wire Notes Line
 	4650 6600 4650 6150
-Wire Notes Line
-	4650 6150 4350 6150
-Wire Notes Line
-	4350 6150 4350 7750
 Wire Wire Line
 	1150 5950 900  5950
 Wire Wire Line
@@ -2581,8 +2368,6 @@ Wire Wire Line
 	3700 4250 4200 4250
 Wire Wire Line
 	3700 4350 4200 4350
-Wire Wire Line
-	1900 7500 2250 7500
 Wire Notes Line
 	2600 5000 2600 7750
 Wire Wire Line
@@ -2593,9 +2378,7 @@ Wire Wire Line
 Wire Notes Line
 	9250 5300 9250 4400
 Wire Wire Line
-	10050 3750 9750 3750
-Wire Wire Line
-	10050 3950 9750 3950
+	9500 3950 10050 3950
 Wire Wire Line
 	5350 6400 5550 6400
 Connection ~ 5450 6400
@@ -2604,10 +2387,228 @@ Wire Wire Line
 Connection ~ 6050 6400
 Wire Wire Line
 	7900 4400 7900 4500
-Text Notes 3200 6050 0    60   ~ 0
+Text Notes 2650 5300 0    60   ~ 0
 Add A 6.8pF and a 1uF cap between pin 1 and GND\nMaybe...
-Text Notes 8250 2500 0    60   ~ 0
-Add a speaker..... -.-\n
-Text Notes 3250 5650 0    60   ~ 0
-Add a 1k resistor to XBEE VCC\n\nAdd UART support
+Text Label 4350 6850 2    60   ~ 0
+XBEE_TX
+Text Label 4350 6950 2    60   ~ 0
+XBEE_RX
+Text Label 5300 2900 1    60   ~ 0
+XBEE_TX
+Text Label 5400 2900 1    60   ~ 0
+XBEE_RX
+$Comp
+L R R?
+U 1 1 52C2144A
+P 4650 6750
+F 0 "R?" V 4700 6950 40  0000 C CNN
+F 1 "0.2" V 4657 6751 40  0000 C CNN
+F 2 "SM0805" H 4650 6750 60  0001 C CNN
+F 3 "" H 4650 6750 60  0001 C CNN
+F 4 "0.021" V 4650 6750 60  0001 C CNN "Price"
+F 5 "Digikey" V 4650 6750 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT4K70CT-ND" V 4650 6750 60  0001 C CNN "Part_Number"
+	1    4650 6750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52C216F8
+P 4650 6850
+F 0 "R?" V 4700 7050 40  0000 C CNN
+F 1 "1k" V 4657 6851 40  0000 C CNN
+F 2 "SM0805" H 4650 6850 60  0001 C CNN
+F 3 "" H 4650 6850 60  0001 C CNN
+F 4 "0.021" V 4650 6850 60  0001 C CNN "Price"
+F 5 "Digikey" V 4650 6850 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT4K70CT-ND" V 4650 6850 60  0001 C CNN "Part_Number"
+	1    4650 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52C21701
+P 4650 6950
+F 0 "R?" V 4700 7150 40  0000 C CNN
+F 1 "1k" V 4657 6951 40  0000 C CNN
+F 2 "SM0805" H 4650 6950 60  0001 C CNN
+F 3 "" H 4650 6950 60  0001 C CNN
+F 4 "0.021" V 4650 6950 60  0001 C CNN "Price"
+F 5 "Digikey" V 4650 6950 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT4K70CT-ND" V 4650 6950 60  0001 C CNN "Part_Number"
+	1    4650 6950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 52C2170A
+P 4650 7050
+F 0 "R?" V 4700 7250 40  0000 C CNN
+F 1 "1k" V 4657 7051 40  0000 C CNN
+F 2 "SM0805" H 4650 7050 60  0001 C CNN
+F 3 "" H 4650 7050 60  0001 C CNN
+F 4 "0.021" V 4650 7050 60  0001 C CNN "Price"
+F 5 "Digikey" V 4650 7050 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT4K70CT-ND" V 4650 7050 60  0001 C CNN "Part_Number"
+	1    4650 7050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 6850 4400 6850
+Wire Wire Line
+	4150 6950 4400 6950
+Wire Wire Line
+	4150 7050 4400 7050
+Wire Wire Line
+	4900 6850 4950 6850
+Wire Wire Line
+	4900 6950 4950 6950
+Wire Wire Line
+	4900 7050 4950 7050
+$Comp
+L R R?
+U 1 1 52C2230E
+P 6200 7650
+F 0 "R?" V 6250 7850 40  0000 C CNN
+F 1 "1k" V 6207 7651 40  0000 C CNN
+F 2 "SM0805" H 6200 7650 60  0001 C CNN
+F 3 "" H 6200 7650 60  0001 C CNN
+F 4 "0.021" V 6200 7650 60  0001 C CNN "Price"
+F 5 "Digikey" V 6200 7650 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT4K70CT-ND" V 6200 7650 60  0001 C CNN "Part_Number"
+	1    6200 7650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5900 7650 5950 7650
+Wire Wire Line
+	6450 7650 6600 7650
+$Comp
+L R R?
+U 1 1 52C22887
+P 4700 1000
+F 0 "R?" V 4750 800 40  0000 C CNN
+F 1 "1k" V 4707 1001 40  0000 C CNN
+F 2 "SM0805" H 4700 1000 60  0001 C CNN
+F 3 "" H 4700 1000 60  0001 C CNN
+F 4 "0.029" V 4700 1000 60  0001 C CNN "Price"
+F 5 "Digikey" V 4700 1000 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT200RCT-ND" V 4700 1000 60  0001 C CNN "Part_Number"
+	1    4700 1000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 1000 4450 1000
+Wire Wire Line
+	4950 1000 5000 1000
+$Comp
+L R R?
+U 1 1 52C22C2E
+P 4700 1300
+F 0 "R?" V 4750 1100 40  0000 C CNN
+F 1 "1k" V 4707 1301 40  0000 C CNN
+F 2 "SM0805" H 4700 1300 60  0001 C CNN
+F 3 "" H 4700 1300 60  0001 C CNN
+F 4 "0.029" V 4700 1300 60  0001 C CNN "Price"
+F 5 "Digikey" V 4700 1300 60  0001 C CNN "Retailer"
+F 6 "RMCF0805JT200RCT-ND" V 4700 1300 60  0001 C CNN "Part_Number"
+	1    4700 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 1300 4450 1300
+Wire Wire Line
+	4950 1300 5000 1300
+Wire Wire Line
+	4900 6750 4950 6750
+Wire Wire Line
+	4400 6750 4150 6750
+Text Label 4350 6750 2    60   ~ 0
+XBEE_PWR
+$Comp
+L CONN_1 P?
+U 1 1 52C25087
+P 9350 3850
+F 0 "P?" H 9400 3850 40  0000 L CNN
+F 1 "CONN_1" H 9350 3905 30  0001 C CNN
+F 2 "pinhead-1X01" H 9800 3850 60  0001 C CNN
+F 3 "" H 9350 3850 60  0000 C CNN
+	1    9350 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P?
+U 1 1 52C2508D
+P 9350 3950
+F 0 "P?" H 9400 3950 40  0000 L CNN
+F 1 "CONN_1" H 9350 4005 30  0001 C CNN
+F 2 "pinhead-1X01" H 9800 3950 60  0001 C CNN
+F 3 "" H 9350 3950 60  0000 C CNN
+	1    9350 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P?
+U 1 1 52C25093
+P 9350 4050
+F 0 "P?" H 9400 4050 40  0000 L CNN
+F 1 "CONN_1" H 9350 4105 30  0001 C CNN
+F 2 "pinhead-1X01" H 9800 4050 60  0001 C CNN
+F 3 "" H 9350 4050 60  0000 C CNN
+	1    9350 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 3750 10050 3750
+$Comp
+L +3.3V #PWR059
+U 1 1 51EB3510
+P 3200 3250
+F 0 "#PWR059" H 3200 3210 30  0001 C CNN
+F 1 "+3.3V" H 3200 3360 30  0000 C CNN
+F 2 "" H 3200 3250 60  0001 C CNN
+F 3 "" H 3200 3250 60  0001 C CNN
+	1    3200 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 3250 3200 3250
+Text Label 2950 3250 0    60   ~ 0
+Vin
+$Comp
+L MICROCLASP_HDRX2 J?
+U 1 1 52C2847D
+P 1000 3250
+F 0 "J?" H 1050 3400 60  0000 C CNN
+F 1 "MICROCLASP_HDRX2" H 1100 3500 60  0000 C CNN
+F 2 "" H 1000 3250 60  0000 C CNN
+F 3 "" H 1000 3250 60  0000 C CNN
+	1    1000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3350 1400 3350
+Wire Wire Line
+	1400 3350 1400 3450
+$Comp
+L GND #PWR?
+U 1 1 52C286C8
+P 1400 3450
+F 0 "#PWR?" H 1400 3450 30  0001 C CNN
+F 1 "GND" H 1400 3380 30  0001 C CNN
+F 2 "" H 1400 3450 60  0000 C CNN
+F 3 "" H 1400 3450 60  0000 C CNN
+	1    1400 3450
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1850 3050 950  400 
+U 51EB09BD
+F0 "Vin_and_BackUp" 50
+F1 "Vin_and_BackUp.sch" 50
+F2 "Vbatt" I L 1850 3250 60 
+F3 "XBEE_PWR" I R 2800 3400 60 
+F4 "XBEE_NFET" I R 2800 3100 60 
+F5 "Vin" I R 2800 3250 60 
+$EndSheet
 $EndSCHEMATC

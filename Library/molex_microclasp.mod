@@ -1,0 +1,50 @@
+PCBNEW-LibModule-V1  Thu 19 Dec 2013 09:14:30 PM CET
+# encoding utf-8
+Units mm
+$INDEX
+55935-0210
+$EndINDEX
+$MODULE 55935-0210
+Po 0 0 0 15 52B35332 00000000 ~~
+Li 55935-0210
+Cd http://www.molex.com/pdm_docs/sd/559350210_sd.pdf
+Sc 0
+AR 
+Op 0 0 0
+T0 8.89 -1.27 1 1 900 0.15 N V 21 N "55935-0210"
+T1 10.16 1.27 1 1 900 0.15 N V 21 N "J**"
+DS -1 -2 7 -2 0.1 21
+DS -1 -6.8 -1 4.45 0.15 21
+DS -1 4.45 7 4.45 0.15 21
+DS 7 -6.8 7 4.45 0.15 21
+DS -1 -6.8 7 -6.8 0.15 21
+$PAD
+Sh "" C 1.3 1.3 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 0 0
+$EndPAD
+$PAD
+Sh "1" R 1.4 1.4 0 0 0
+Dr 0.9 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 2 2.4
+$EndPAD
+$PAD
+Sh "2" C 1.4 1.4 0 0 0
+Dr 0.9 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 4 2.4
+$EndPAD
+$PAD
+Sh "" C 1.3 1.3 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6 0
+$EndPAD
+$EndMODULE 55935-0210
+$EndLIBRARY

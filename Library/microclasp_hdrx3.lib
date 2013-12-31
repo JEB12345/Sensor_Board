@@ -1,0 +1,22 @@
+EESchema-LIBRARY Version 2.3  Date: Thu 19 Dec 2013 12:28:42 AM CET
+#encoding utf-8
+#
+# MicroClasp_hdrX3
+#
+DEF MicroClasp_hdrX3 J 0 40 Y Y 1 F N
+F0 "J" 50 200 60 H V C CNN
+F1 "MicroClasp_hdrX3" 400 300 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+$FPLIST
+ 55935-0330
+$ENDFPLIST
+DRAW
+S 200 100 -100 -250 0 1 0 N
+X 1 1 150 0 118 L 50 50 1 1 I
+X 2 2 150 -100 118 L 50 50 1 1 I
+X 3 3 150 -200 118 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
