@@ -48,6 +48,7 @@ LIBS:sw_push_4
 LIBS:TPS2113A
 LIBS:microclasp_hdrx2
 LIBS:microclasp_hdrx3
+LIBS:pinhd-2x23
 LIBS:Sensor_Board-cache
 EELAYER 27 0
 EELAYER END
