@@ -1,8 +1,9 @@
-PCBNEW-LibModule-V1  Thu 19 Dec 2013 09:14:30 PM CET
+PCBNEW-LibModule-V1  1/6/2014 4:43:01 PM
 # encoding utf-8
 Units mm
 $INDEX
 55935-0210
+microclasp_vdrx2
 $EndINDEX
 $MODULE 55935-0210
 Po 0 0 0 15 52B35332 00000000 ~~
@@ -47,4 +48,42 @@ Ne 0 ""
 Po 6 0
 $EndPAD
 $EndMODULE 55935-0210
+$MODULE microclasp_vdrx2
+Po 0 0 0 15 52CB4D5E 00000000 ~~
+Li microclasp_vdrx2
+Cd http://www.molex.com/pdm_docs/sd/559350210_sd.pdf
+Sc 0
+AR /52CB1D42
+Op 0 0 0
+T0 3.81 -2.54 1 1 0 0.15 N V 21 N "J3"
+T1 3.556 8.382 1 1 0 0.15 N V 21 N "MICROCLASP_VDRX2"
+DS 7 -1.1 7 5.588 0.15 21
+DS -1.016 -1.1 -1.016 5.588 0.15 21
+DS 0.75 5.6 0.75 6 0.15 21
+DS 0.75 6 5.75 6 0.15 21
+DS 5.75 5.6 5.75 6 0.15 21
+DS -1 -1.1 7 -1.1 0.15 21
+DS -1 5.6 7 5.6 0.15 21
+$PAD
+Sh "1" R 1.4 1.4 0 0 0
+Dr 0.9 0 0
+At STD N 00E0FFFF
+Ne 1 "/BBB_Pins/BBB_CANH"
+Po 2 1.9
+$EndPAD
+$PAD
+Sh "2" C 1.4 1.4 0 0 0
+Dr 0.9 0 0
+At STD N 00E0FFFF
+Ne 2 "/BBB_Pins/BBB_CANL"
+Po 4 1.9
+$EndPAD
+$PAD
+Sh "" C 1.3 1.3 0 0 0
+Dr 1.3 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+Po 6 0
+$EndPAD
+$EndMODULE microclasp_vdrx2
 $EndLIBRARY
