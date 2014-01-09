@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Users\Jonathan\Projects\NASA_IRG\SSB\CAD\Electronics\Sensor_Board\Schematics\Sensor_Board.sch)
-    (date "1/7/2014 6:31:36 PM")
+    (date "1/8/2014 9:56:04 AM")
     (tool "eeschema (2013-07-07 BZR 4022)-stable"))
   (components
     (comp (ref C13)
@@ -540,7 +540,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 52C2144A))
     (comp (ref R3)
-      (value 1k)
+      (value 30)
       (footprint SM0805)
       (fields
         (field (name Price) 0.021)
@@ -550,7 +550,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 52C216F8))
     (comp (ref R5)
-      (value 1k)
+      (value 30)
       (footprint SM0805)
       (fields
         (field (name Price) 0.021)
@@ -560,7 +560,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 52C21701))
     (comp (ref R17)
-      (value 1k)
+      (value 30)
       (footprint SM0805)
       (fields
         (field (name Price) 0.021)
@@ -570,7 +570,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 52C2170A))
     (comp (ref R23)
-      (value 1k)
+      (value 30)
       (footprint SM0805)
       (fields
         (field (name Price) 0.021)
