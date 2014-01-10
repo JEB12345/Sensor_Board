@@ -58,7 +58,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
 Title ""
-Date "8 jan 2014"
+Date "9 jan 2014"
 Rev ""
 Comp ""
 Comment1 ""
@@ -1430,7 +1430,7 @@ ES_DA
 Text Notes 7150 600  0    60   ~ 0
 Digital Power Flags
 Text Notes 4700 650  0    60   ~ 0
-CAN Transiever + Connector
+CAN Transceiver + Connector
 $Comp
 L RGB_LED U4
 U 1 1 51E187F7
