@@ -1,7 +1,7 @@
 Sensor_Board
 ============
 
-Sensor Board for our SUPER Ball Bot Tensegrity Project. The project is built in KiCAD. Please visit http://www.kicad-pcb.org to get more info and download this open source CAD tool.
+Sensor Board for our SUPER Ball Bot Tensegrity Project. Welcome! The project is built in KiCAD. Please visit http://www.kicad-pcb.org to get more info and download this open source CAD tool.
 
 This project was built using KiCAD version (2013-mar-2013)-testing. There maybe compatablility issues associated with older versions of KiCAD.
 
