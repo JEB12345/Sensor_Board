@@ -35,10 +35,15 @@ LIBS:AP7363
 LIBS:AS1359
 LIBS:dp_devices
 LIBS:DSPIC33E128MC506
+LIBS:ld29150dt50r
 LIBS:MAG3110
 LIBS:microchip_can
+LIBS:microclasp_hdrx2
+LIBS:microclasp_hdrx3
 LIBS:MPU-6000_MPU-6050
 LIBS:MPU-9150
+LIBS:ncp59151ds50r4g
+LIBS:pinhd-2x23
 LIBS:pinhead
 LIBS:RESISTOR_ARRAY
 LIBS:RGB_LED
@@ -46,13 +51,7 @@ LIBS:Si1970DH
 LIBS:sn65hvd232
 LIBS:sw_push_4
 LIBS:TPS2113A
-LIBS:microclasp_hdrx2
-LIBS:microclasp_hdrx3
-LIBS:pinhd-2x23
-LIBS:ld29150dt50r
-LIBS:ncp59151ds50r4g
-LIBS:Sensor_Board-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
