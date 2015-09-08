@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jonathan/Projects/SBB/CAD/Electronics/Sensor_Board/Schematics/Sensor_Board.sch)
-    (date "Mon 07 Sep 2015 05:48:14 PM PDT")
+    (date "Mon 07 Sep 2015 06:22:36 PM PDT")
     (tool "Eeschema no-vcs-found-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
